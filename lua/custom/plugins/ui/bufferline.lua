@@ -34,11 +34,6 @@ return {
               text = 'File Explorer',
               seperator = true,
             },
-            {
-              filetype = 'dbui',
-              text = 'DadBod Explorer',
-              seperator = true,
-            },
           },
           close_command = require('bufdelete').bufdelete,
           -- show_buffer_close_icons = false,
