@@ -14,10 +14,6 @@ return {
       }
     end,
   },
-  {
-    'tpope/vim-surround',
-    enabled = false,
-  },
 }
 
 -- NOTE: To adding suround without extra surrounding space

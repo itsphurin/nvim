@@ -1,8 +1,7 @@
 vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWinEnter' }, {
   pattern = { '*.hl', 'hypr*.conf' },
-  callback = function(event)
+  callback = function()
     vim.opt.filetype = 'hyprlang'
-    require('lspconfig')['hyprls'].setup { hyprls = {} }
   end,
 })
 

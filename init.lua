@@ -161,9 +161,9 @@ vim.opt.scrolloff = 10
 -- Phurinut's Personal Config
 vim.opt.wrap = false
 vim.opt.colorcolumn = '120'
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 
 -- [[ Basic Keymaps ]]
@@ -954,7 +954,7 @@ require('lazy').setup({
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  require 'kickstart.plugins.debug',
+  -- require 'kickstart.plugins.debug', -- disabled: avoids kickstart's lazy <leader>b collision with nvim-tree toggle; custom DAP stack (also stripped later) lived in lua/custom/plugins/dap/
   require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
@@ -991,4 +991,4 @@ require('lazy').setup({
 })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=2 sts=2 sw=2 et
+-- vim: ts=4 sts=4 sw=4 et
