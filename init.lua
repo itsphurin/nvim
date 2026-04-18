@@ -161,9 +161,9 @@ vim.opt.scrolloff = 10
 -- Phurinut's Personal Config
 vim.opt.wrap = false
 vim.opt.colorcolumn = '120'
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 
 -- [[ Basic Keymaps ]]
@@ -991,4 +991,4 @@ require('lazy').setup({
 })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=2 sts=2 sw=2 et
+-- vim: ts=4 sts=4 sw=4 et
