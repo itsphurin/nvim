@@ -318,7 +318,9 @@ require('lazy').setup({
   { -- Fuzzy Finder (files, lsp, etc)
     'nvim-telescope/telescope.nvim',
     event = 'VimEnter',
-    branch = '0.1.x',
+    -- 0.1.x is unmaintained (last commit 2024-05) and still calls the
+    -- nvim-treesitter master-only API; master uses core vim.treesitter.
+    branch = 'master',
     dependencies = {
       'nvim-lua/plenary.nvim',
       { -- If encountering errors, see telescope-fzf-native README for installation instructions
@@ -969,6 +971,8 @@ require('lazy').setup({
   { import = 'custom.plugins' },
   { import = 'custom.configs' },
 }, {
+  -- No plugin here requires luarocks; skip hererocks so :checkhealth stays clean.
+  rocks = { enabled = false },
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
     -- default lazy.nvim defined Nerd Font icons, otherwise define a unicode icons table

@@ -123,6 +123,7 @@ return {
         'sonarlint-language-server',
         'buf',
         'yq',
+        'tree-sitter-cli', -- required by nvim-treesitter `main` to build parsers
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
