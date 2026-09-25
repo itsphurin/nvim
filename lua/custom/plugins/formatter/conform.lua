@@ -6,11 +6,14 @@ return {
     keys = {
       {
         '<leader>f',
-        function()
-          require('conform').format { async = true, lsp_fallback = true }
-        end,
+        function() require('conform').format { async = true, lsp_fallback = true } end,
         desc = '[F]ormat buffer (conform)',
         mode = { 'n' },
+      },
+      {
+        '<leader>tf',
+        function() vim.cmd 'AutoFormatToggle' end,
+        desc = 'Toggle autoformat for current buffer',
       },
     },
     config = function()
